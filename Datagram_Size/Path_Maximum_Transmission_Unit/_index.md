@@ -6,7 +6,7 @@ weight: 1420
 
 The PMTU is the maximum size of the entire IP packet, including the IP header, UDP header, and UDP payload. The UDP payload includes one or more QUIC packet headers and protected payloads. The PMTU can depend on path characteristics and can therefore change over time. The largest UDP payload an endpoint sends at any given time is referred to as the endpoint's maximum datagram size.
 
-PMTU指整个IP数据包的最大尺寸，包括IP头部、UDP头部和UDP载荷。UDP载荷包含一个或多个QUIC数据包头部和受保护的载荷。PMTU可能受路径特征影响因而随时间变化。终端的最大数据报尺寸指的是在某个给定时间，终端能发送的最大UDP载荷大小。
+`PMTU`（路径最大传输单元）指整个IP数据包的最大尺寸，包括IP头部、UDP头部和UDP载荷。UDP载荷包含一个或多个QUIC数据包头部和受保护的载荷。PMTU可能受路径特征影响因而随时间变化。终端的最大数据报尺寸指的是在某个给定时间，终端能发送的最大UDP载荷大小。
 
 An endpoint SHOULD use DPLPMTUD (Section 14.3) or PMTUD (Section 14.2.1) to determine whether the path to a destination will support a desired maximum datagram size without fragmentation. In the absence of these mechanisms, QUIC endpoints SHOULD NOT send datagrams larger than the smallest allowed maximum datagram size.
 
@@ -18,7 +18,7 @@ DPLPMTUD和PMTUD都会发送比当前的最大数据报尺寸更大的数据报�
 
 If a QUIC endpoint determines that the PMTU between any pair of local and remote IP addresses cannot support the smallest allowed maximum datagram size of 1200 bytes, it MUST immediately cease sending QUIC packets, except for those in PMTU probes or those containing CONNECTION_CLOSE frames, on the affected path. An endpoint MAY terminate the connection if an alternative path cannot be found.
 
-如果QUIC终端认定某对本地IP地址和远程IP地址间的PMTU达不到1200字节，这个在允许的最大数据报尺寸中的最小值，那么它{{< req_level MUST >}}在受影响的路径上立即停止发送QUIC数据包，除了那些在PMTU探测包中的或包含`连接关闭`帧的数据包。如果无法找到备选路径，那么终端{{< req_level MAY >}}终止连接。
+如果QUIC终端认定某对本地IP地址和远程IP地址间的PMTU达不到1200字节，这个在允许的最大数据报尺寸中的最小值，那么它{{< req_level MUST >}}在受影响的路径上立即停止发送QUIC数据包，除了那些在PMTU探测包中的或包含**连接关闭帧**的数据包。如果无法找到备选路径，那么终端{{< req_level MAY >}}终止连接。
 
 Each pair of local and remote addresses could have a different PMTU. QUIC implementations that implement any kind of PMTU discovery therefore SHOULD maintain a maximum datagram size for each combination of local and remote IP addresses.
 
