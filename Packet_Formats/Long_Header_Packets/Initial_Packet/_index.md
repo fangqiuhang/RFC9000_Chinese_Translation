@@ -7,7 +7,7 @@ rank: "h2"
 
 An Initial packet uses long headers with a type value of 0x00. It carries the first CRYPTO frames sent by the client and server to perform key exchange, and it carries ACK frames in either direction.
 
-初始数据包使用类型值为`0x00`的长包头。它携带着发送自客户端和服务器的最初的加密帧以进行密钥交换，同时它还携带着任意方向的ACK帧。
+初始数据包使用类型值为`0x00`的长包头。它携带着发送自客户端和服务器的最初的**加密帧**以进行密钥交换，同时它还携带着任意方向的**ACK帧**。
 
 Initial Packet {
 Header Form (1) = 1,
