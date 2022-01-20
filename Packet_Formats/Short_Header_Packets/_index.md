@@ -5,6 +5,4 @@ weight: 1730
 rank: "h2"
 ---
 
-This version of QUIC defines a single packet type that uses the short packet header.
-
 本QUIC版本定义了1种使用短数据包包头的数据包类型。
