@@ -26,7 +26,7 @@ Any maximum datagram size larger than 1200 bytes can be discovered using Path Ma
 
 Enforcement of the max_udp_payload_size transport parameter (Section 18.2) might act as an additional limit on the maximum datagram size. A sender can avoid exceeding this limit, once the value is known. However, prior to learning the value of the transport parameter, endpoints risk datagrams being lost if they send datagrams larger than the smallest allowed maximum datagram size of 1200 bytes.
 
-强制执行传输参数`max_udp_payload_size`（[第18.2章]()）可能成为一个额外的对最大数据报尺寸的限制。一旦这个值已知，发送者就可以避免超过这个限制。然而在获知这个传输参数的值之前，如果终端发送了比1200字节，这个在允许的最大数据报尺寸中的最小值，更大的数据报，那么终端就要承担数据报丢失的风险。
+强制执行传输参数`max_udp_payload_size`（[第18.2章]()）可能成为一个额外的对最大数据报尺寸的限制。一旦这个值已知，发送方就可以避免超过这个限制。然而在获知这个传输参数的值之前，如果终端发送了比1200字节，这个在允许的最大数据报尺寸中的最小值，更大的数据报，那么终端就要承担数据报丢失的风险。
 
 UDP datagrams MUST NOT be fragmented at the IP layer. In IPv4 [IPv4], the Don't Fragment (DF) bit MUST be set if possible, to prevent fragmentation on the path.
 
@@ -34,4 +34,4 @@ UDP数据报{{< req_level MUST_NOT >}}在IP层被分段。在IPv4（《[IPv4]()�
 
 QUIC sometimes requires datagrams to be no smaller than a certain size; see Section 8.1 as an example. However, the size of a datagram is not authenticated. That is, if an endpoint receives a datagram of a certain size, it cannot know that the sender sent the datagram at the same size. Therefore, an endpoint MUST NOT close a connection when it receives a datagram that does not meet size constraints; the endpoint MAY discard such datagrams.
 
-QUIC有时需要数据报不小于一个特定尺寸，比如[第8.1章]()中的例子。然而，数据报的尺寸不会被认证。也就是说，如果终端接收到了某个尺寸的数据报，它不能确定发送者发送的是不是就是那个尺寸的数据报。因此，当终端接收到一个没有满足尺寸限制的数据报时，它{{< req_level MUST_NOT >}}关闭那条连接；终端{{< req_level MAY >}}丢弃这样的数据报。
+QUIC有时需要数据报不小于一个特定尺寸，比如[第8.1章]()中的例子。然而，数据报的尺寸不会被认证。也就是说，如果终端接收到了某个尺寸的数据报，它不能确定发送方发送的是不是就是那个尺寸的数据报。因此，当终端接收到一个没有满足尺寸限制的数据报时，它{{< req_level MUST_NOT >}}关闭那条连接；终端{{< req_level MAY >}}丢弃这样的数据报。
