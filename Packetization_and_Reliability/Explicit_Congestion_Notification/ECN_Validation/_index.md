@@ -14,7 +14,7 @@ To perform ECN validation for a new path:
 
 * The endpoint sets an ECT(0) codepoint in the IP header of early outgoing packets sent on a new path to the peer [RFC8311].
 
-* 对于一条新路径上，终端在发向对端的早期的出站数据包的IP头部设置一个`ECT(0)`码点。
+* 对于在一条新路径上发向对端的出站数据包，终端在早期的几个数据包的IP头部设置一个`ECT(0)`码点。
 
 * The endpoint monitors whether all packets sent with an ECT codepoint are eventually deemed lost (Section 6 of [QUIC-RECOVERY]), indicating that ECN validation has failed.
 
