@@ -142,7 +142,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="912" y="7516" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 3098,9346 L 913,9346 913,7517 5282,7517 5282,9346 3098,9346 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 3098,9346 L 913,9346 913,7517 5282,7517 5282,9346 3098,9346 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="2251" y="8718"><tspan fill="rgb(222,230,239)" stroke="none">接收</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="2251" y="8718"><tspan fill="rgb(0,0,0)" stroke="none">接收</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -150,7 +150,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="912" y="15136" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 3098,16966 L 913,16966 913,15137 5282,15137 5282,16966 3098,16966 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 3098,16966 L 913,16966 913,15137 5282,15137 5282,16966 3098,16966 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="981" y="16338"><tspan fill="rgb(222,230,239)" stroke="none">数据量确认</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="981" y="16338"><tspan fill="rgb(0,0,0)" stroke="none">数据量确认</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -158,7 +158,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="912" y="22756" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 3098,24586 L 913,24586 913,22757 5282,22757 5282,24586 3098,24586 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 3098,24586 L 913,24586 913,22757 5282,22757 5282,24586 3098,24586 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="1404" y="23958"><tspan fill="rgb(222,230,239)" stroke="none">接收完成</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="1404" y="23958"><tspan fill="rgb(0,0,0)" stroke="none">接收完成</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -166,7 +166,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="912" y="30376" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 3098,32206 L 913,32206 913,30377 5282,30377 5282,32206 3098,32206 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 3098,32206 L 913,32206 913,30377 5282,30377 5282,32206 3098,32206 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="1404" y="31578"><tspan fill="rgb(222,230,239)" stroke="none">读取完成</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="1404" y="31578"><tspan fill="rgb(0,0,0)" stroke="none">读取完成</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -174,7 +174,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="16304" y="22756" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 18490,24586 L 16305,24586 16305,22757 20674,22757 20674,24586 18490,24586 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 18490,24586 L 16305,24586 16305,22757 20674,22757 20674,24586 18490,24586 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="16796" y="23958"><tspan fill="rgb(222,230,239)" stroke="none">重置接收</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="16796" y="23958"><tspan fill="rgb(0,0,0)" stroke="none">重置接收</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -182,7 +182,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="16304" y="30376" width="4372" height="1832"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 18490,32206 L 16305,32206 16305,30377 20674,30377 20674,32206 18490,32206 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 18490,32206 L 16305,32206 16305,30377 20674,30377 20674,32206 18490,32206 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="16796" y="31578"><tspan fill="rgb(222,230,239)" stroke="none">重置读取</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="16796" y="31578"><tspan fill="rgb(0,0,0)" stroke="none">重置读取</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -253,7 +253,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="3402" y="1827" width="23119" height="4576"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 4724,1828 L 4724,2588 4724,3157 4724,3727 4724,4501 3403,4573 4724,5640 4724,6401 8346,6401 11060,6401 13774,6401 17468,6401 20182,6401 22896,6401 26519,6401 26519,5640 26519,5071 26519,4501 26519,3727 26519,3157 26519,2588 26519,1828 22896,1828 20182,1828 17468,1828 13774,1828 11060,1828 8346,1828 4724,1828 4724,1828 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 4724,1828 L 4724,2588 4724,3157 4724,3727 4724,4501 3403,4573 4724,5640 4724,6401 8346,6401 11060,6401 13774,6401 17468,6401 20182,6401 22896,6401 26519,6401 26519,5640 26519,5071 26519,4501 26519,3727 26519,3157 26519,2588 26519,1828 22896,1828 20182,1828 17468,1828 13774,1828 11060,1828 8346,1828 4724,1828 4724,1828 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="2573"><tspan fill="rgb(222,230,239)" stroke="none">接收</tspan><tspan font-weight="700" fill="rgb(222,230,239)" stroke="none">流帧</tspan><tspan fill="rgb(222,230,239)" stroke="none">（</tspan><tspan fill="rgb(222,230,239)" stroke="none">STREAM</tspan><tspan fill="rgb(222,230,239)" stroke="none">）、</tspan><tspan font-weight="700" fill="rgb(222,230,239)" stroke="none">流阻塞帧</tspan><tspan fill="rgb(222,230,239)" stroke="none">（</tspan><tspan fill="rgb(222,230,239)" stroke="none">STREAM_DATA_BLOCKED</tspan><tspan fill="rgb(222,230,239)" stroke="none">）、</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="4974" y="3276"><tspan fill="rgb(222,230,239)" stroke="none">流重置帧</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">（</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">RESET_STREAM</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="3979"><tspan fill="rgb(222,230,239)" stroke="none">创建双向流（发送）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="4974" y="4682"><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">接收</tspan><tspan fill="rgb(222,230,239)" stroke="none">最大流数据帧</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">（</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">MAX_STREAM_DATA</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">）、</tspan><tspan fill="rgb(222,230,239)" stroke="none">停止发送帧</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="5385"><tspan fill="rgb(222,230,239)" stroke="none">（</tspan><tspan fill="rgb(222,230,239)" stroke="none">STOP_SENDING</tspan><tspan fill="rgb(222,230,239)" stroke="none">）（双向）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="6088"><tspan fill="rgb(222,230,239)" stroke="none">创建流</tspan><tspan fill="rgb(222,230,239)" stroke="none">ID</tspan><tspan fill="rgb(222,230,239)" stroke="none">数更高的流。</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="2573"><tspan fill="rgb(0,0,0)" stroke="none">接收</tspan><tspan font-weight="700" fill="rgb(0,0,0)" stroke="none">流帧</tspan><tspan fill="rgb(0,0,0)" stroke="none">（</tspan><tspan fill="rgb(0,0,0)" stroke="none">STREAM</tspan><tspan fill="rgb(0,0,0)" stroke="none">）、</tspan><tspan font-weight="700" fill="rgb(0,0,0)" stroke="none">流阻塞帧</tspan><tspan fill="rgb(0,0,0)" stroke="none">（</tspan><tspan fill="rgb(0,0,0)" stroke="none">STREAM_DATA_BLOCKED</tspan><tspan fill="rgb(0,0,0)" stroke="none">）、</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="4974" y="3276"><tspan fill="rgb(0,0,0)" stroke="none">流重置帧</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">（</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">RESET_STREAM</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="3979"><tspan fill="rgb(0,0,0)" stroke="none">创建双向流（发送）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="4974" y="4682"><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">接收</tspan><tspan fill="rgb(0,0,0)" stroke="none">最大流数据帧</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">（</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">MAX_STREAM_DATA</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">）、</tspan><tspan fill="rgb(0,0,0)" stroke="none">停止发送帧</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="5385"><tspan fill="rgb(0,0,0)" stroke="none">（</tspan><tspan fill="rgb(0,0,0)" stroke="none">STOP_SENDING</tspan><tspan fill="rgb(0,0,0)" stroke="none">）（双向）；</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="6088"><tspan fill="rgb(0,0,0)" stroke="none">创建流</tspan><tspan fill="rgb(0,0,0)" stroke="none">ID</tspan><tspan fill="rgb(0,0,0)" stroke="none">数更高的流。</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -261,7 +261,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="3378" y="10310" width="7699" height="1833"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 4724,10311 L 4724,10615 4724,10843 4724,11070 4724,11381 3379,11782 4724,11836 4724,12141 5779,12141 6570,12141 7361,12141 8437,12141 9228,12141 10019,12141 11075,12141 11075,11836 11075,11608 11075,11381 11075,11070 11075,10843 11075,10615 11075,10311 10019,10311 9228,10311 8437,10311 7361,10311 6570,10311 5779,10311 4724,10311 4724,10311 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 4724,10311 L 4724,10615 4724,10843 4724,11070 4724,11381 3379,11782 4724,11836 4724,12141 5779,12141 6570,12141 7361,12141 8437,12141 9228,12141 10019,12141 11075,12141 11075,11836 11075,11608 11075,11381 11075,11070 11075,10843 11075,10615 11075,10311 10019,10311 9228,10311 8437,10311 7361,10311 6570,10311 5779,10311 4724,10311 4724,10311 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="11442"><tspan fill="rgb(222,230,239)" stroke="none">接收</tspan><tspan font-weight="700" fill="rgb(222,230,239)" stroke="none">流帧</tspan><tspan fill="rgb(222,230,239)" stroke="none">+FIN</tspan><tspan fill="rgb(222,230,239)" stroke="none">置位</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="11442"><tspan fill="rgb(0,0,0)" stroke="none">接收</tspan><tspan font-weight="700" fill="rgb(0,0,0)" stroke="none">流帧</tspan><tspan fill="rgb(0,0,0)" stroke="none">+FIN</tspan><tspan fill="rgb(0,0,0)" stroke="none">置位</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -269,7 +269,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="3378" y="18311" width="7699" height="1655"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 4724,18312 L 4724,18586 4724,18792 4724,18998 4724,19277 3379,19274 4724,19689 4724,19964 5779,19964 6570,19964 7361,19964 8437,19964 9228,19964 10019,19964 11075,19964 11075,19689 11075,19483 11075,19277 11075,18998 11075,18792 11075,18586 11075,18312 10019,18312 9228,18312 8437,18312 7361,18312 6570,18312 5779,18312 4724,18312 4724,18312 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 4724,18312 L 4724,18586 4724,18792 4724,18998 4724,19277 3379,19274 4724,19689 4724,19964 5779,19964 6570,19964 7361,19964 8437,19964 9228,19964 10019,19964 11075,19964 11075,19689 11075,19483 11075,19277 11075,18998 11075,18792 11075,18586 11075,18312 10019,18312 9228,18312 8437,18312 7361,18312 6570,18312 5779,18312 4724,18312 4724,18312 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="19354"><tspan fill="rgb(222,230,239)" stroke="none">接收全部数据</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="19354"><tspan fill="rgb(0,0,0)" stroke="none">接收全部数据</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -277,7 +277,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="3378" y="27512" width="7699" height="1833"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 4724,27513 L 4724,27817 4724,28045 4724,28272 4724,28583 3379,28472 4724,29038 4724,29343 5779,29343 6570,29343 7361,29343 8437,29343 9228,29343 10019,29343 11075,29343 11075,29038 11075,28810 11075,28583 11075,28272 11075,28045 11075,27817 11075,27513 10019,27513 9228,27513 8437,27513 7361,27513 6570,27513 5779,27513 4724,27513 4724,27513 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 4724,27513 L 4724,27817 4724,28045 4724,28272 4724,28583 3379,28472 4724,29038 4724,29343 5779,29343 6570,29343 7361,29343 8437,29343 9228,29343 10019,29343 11075,29343 11075,29038 11075,28810 11075,28583 11075,28272 11075,28045 11075,27817 11075,27513 10019,27513 9228,27513 8437,27513 7361,27513 6570,27513 5779,27513 4724,27513 4724,27513 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="28644"><tspan fill="rgb(222,230,239)" stroke="none">应用层读取全部数据</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="4974" y="28644"><tspan fill="rgb(0,0,0)" stroke="none">应用层读取全部数据</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -293,7 +293,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="18821" y="26312" width="7699" height="1833"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 20167,26313 L 20167,26617 20167,26845 20167,27072 20167,27383 18822,27272 20167,27838 20167,28143 21222,28143 22013,28143 22804,28143 23880,28143 24671,28143 25462,28143 26518,28143 26518,27838 26518,27610 26518,27383 26518,27072 26518,26845 26518,26617 26518,26313 25462,26313 24671,26313 23880,26313 22804,26313 22013,26313 21222,26313 20167,26313 20167,26313 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 20167,26313 L 20167,26617 20167,26845 20167,27072 20167,27383 18822,27272 20167,27838 20167,28143 21222,28143 22013,28143 22804,28143 23880,28143 24671,28143 25462,28143 26518,28143 26518,27838 26518,27610 26518,27383 26518,27072 26518,26845 26518,26617 26518,26313 25462,26313 24671,26313 23880,26313 22804,26313 22013,26313 21222,26313 20167,26313 20167,26313 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="20417" y="27444"><tspan fill="rgb(222,230,239)" stroke="none">应用层读取重置</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="20417" y="27444"><tspan fill="rgb(0,0,0)" stroke="none">应用层读取重置</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -301,7 +301,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="6881" y="20927" width="6735" height="2491"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 6882,20928 L 6882,21232 6882,21460 6882,21687 6882,21998 6882,22225 6882,22453 6882,22758 8000,22758 7381,23416 9677,22758 10818,22758 11656,22758 12495,22758 13614,22758 13614,22453 13614,22225 13614,21998 13614,21687 13614,21460 13614,21232 13614,20928 12495,20928 11656,20928 10818,20928 9677,20928 8839,20928 8000,20928 6882,20928 6882,20928 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 6882,20928 L 6882,21232 6882,21460 6882,21687 6882,21998 6882,22225 6882,22453 6882,22758 8000,22758 7381,23416 9677,22758 10818,22758 11656,22758 12495,22758 13614,22758 13614,22453 13614,22225 13614,21998 13614,21687 13614,21460 13614,21232 13614,20928 12495,20928 11656,20928 10818,20928 9677,20928 8839,20928 8000,20928 6882,20928 6882,20928 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="7132" y="22059"><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">接收</tspan><tspan fill="rgb(222,230,239)" stroke="none">流重置帧</tspan><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">（可选）</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="7132" y="22059"><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">接收</tspan><tspan fill="rgb(0,0,0)" stroke="none">流重置帧</tspan><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">（可选）</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.LineShape">
@@ -316,7 +316,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="6881" y="24453" width="6735" height="2371"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 6882,24992 L 6882,25296 6882,25524 6882,25751 6882,26062 6882,26289 6882,26517 6882,26822 8000,26822 8839,26822 9677,26822 10818,26822 11656,26822 12495,26822 13614,26822 13614,26517 13614,26289 13614,26062 13614,25751 13614,25524 13614,25296 13614,24992 12495,24992 11656,24992 10818,24992 9677,24992 7461,24454 8000,24992 6882,24992 6882,24992 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 6882,24992 L 6882,25296 6882,25524 6882,25751 6882,26062 6882,26289 6882,26517 6882,26822 8000,26822 8839,26822 9677,26822 10818,26822 11656,26822 12495,26822 13614,26822 13614,26517 13614,26289 13614,26062 13614,25751 13614,25524 13614,25296 13614,24992 12495,24992 11656,24992 10818,24992 9677,24992 7461,24454 8000,24992 6882,24992 6882,24992 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="7132" y="26123"><tspan fill="rgb(222,230,239)" stroke="none">接收全部数据（可选）</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="7132" y="26123"><tspan fill="rgb(0,0,0)" stroke="none">接收全部数据（可选）</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
@@ -324,7 +324,7 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="18745" y="8405" width="7699" height="1833"/>
         <path fill="rgb(238,238,238)" stroke="none" d="M 20091,8406 L 20091,8710 20091,8938 20091,9165 20091,9476 18746,9365 20091,9931 20091,10236 21146,10236 21937,10236 22728,10236 23804,10236 24595,10236 25386,10236 26442,10236 26442,9931 26442,9703 26442,9476 26442,9165 26442,8938 26442,8710 26442,8406 25386,8406 24595,8406 23804,8406 22728,8406 21937,8406 21146,8406 20091,8406 20091,8406 Z"/>
         <path fill="none" stroke="rgb(222,230,239)" d="M 20091,8406 L 20091,8710 20091,8938 20091,9165 20091,9476 18746,9365 20091,9931 20091,10236 21146,10236 21937,10236 22728,10236 23804,10236 24595,10236 25386,10236 26442,10236 26442,9931 26442,9703 26442,9476 26442,9165 26442,8938 26442,8710 26442,8406 25386,8406 24595,8406 23804,8406 22728,8406 21937,8406 21146,8406 20091,8406 20091,8406 Z"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="20341" y="9537"><tspan font-weight="400" fill="rgb(222,230,239)" stroke="none">接收</tspan><tspan fill="rgb(222,230,239)" stroke="none">流重置帧</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Times New Roman, serif" font-size="635px" font-weight="700"><tspan class="TextPosition" x="20341" y="9537"><tspan font-weight="400" fill="rgb(0,0,0)" stroke="none">接收</tspan><tspan fill="rgb(0,0,0)" stroke="none">流重置帧</tspan></tspan></tspan></text>
        </g>
       </g>
      </g>
