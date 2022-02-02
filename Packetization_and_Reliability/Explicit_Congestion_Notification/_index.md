@@ -2,6 +2,7 @@
 title: "13.4 显式拥塞通知"
 anchor: "13.4_Explicit_Congestion_Notification"
 weight: 1340
+rank: "h2"
 ---
 
 QUIC endpoints can use ECN [RFC3168] to detect and respond to network congestion. ECN allows an endpoint to set an ECN-Capable Transport (ECT) codepoint in the ECN field of an IP packet. A network node can then indicate congestion by setting the ECN-CE codepoint in the ECN field instead of dropping the packet [RFC8087]. Endpoints react to reported congestion by reducing their sending rate in response, as described in [QUIC-RECOVERY].

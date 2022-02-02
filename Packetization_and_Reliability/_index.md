@@ -2,6 +2,7 @@
 title: "13. 分包与可靠性"
 anchor: "13_Packetization_and_Reliability"
 weight: 1300
+rank: "h1"
 ---
 
 A sender sends one or more frames in a QUIC packet; see Section 12.4.

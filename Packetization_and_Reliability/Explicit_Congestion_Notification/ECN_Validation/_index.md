@@ -2,6 +2,7 @@
 title: "13.4.2 ECN验证"
 anchor: "13.4.2_ECN_Validation"
 weight: 1342
+rank: "h3"
 ---
 
 It is possible for faulty network devices to corrupt or erroneously drop packets that carry a non-zero ECN codepoint. To ensure connectivity in the presence of such devices, an endpoint validates the ECN counts for each network path and disables the use of ECN on that path if errors are detected.

@@ -2,6 +2,7 @@
 title: "13.2 生成确认"
 anchor: "13.2_Generating_Acknowledgments"
 weight: 1320
+rank: "h2"
 ---
 
 Endpoints acknowledge all packets they receive and process. However, only ack-eliciting packets cause an ACK frame to be sent within the maximum ack delay. Packets that are not ack-eliciting are only acknowledged when an ACK frame is sent for other reasons.
