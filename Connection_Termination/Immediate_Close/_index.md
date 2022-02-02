@@ -23,7 +23,7 @@ An immediate close can be used after an application protocol has arranged to clo
 
 The closing and draining connection states exist to ensure that connections close cleanly and that delayed or reordered packets are properly discarded. These states SHOULD persist for at least three times the current PTO interval as defined in [QUIC-RECOVERY].
 
-关闭和排空状态用于确保连接被干净地关闭，并且延误的和乱序的数据包被正确地丢弃。这些状态的持续时间{{< req_level SHOULD >}}至少为当前PTO间隔的三倍，详见《[QUIC恢复]()》。
+关闭和排空状态用于确保连接被干净地关闭，并且延误的和乱序的数据包被正确地丢弃。这些状态的持续时间{{< req_level SHOULD >}}至少为当前PTO间隔（定义于《[QUIC恢复]()》）的三倍大小。
 
 Disposing of connection state prior to exiting the closing or draining state could result in an endpoint generating a Stateless Reset unnecessarily when it receives a late-arriving packet. Endpoints that have some alternative means to ensure that late-arriving packets do not induce a response, such as those that are able to close the UDP socket, MAY end these states earlier to allow for faster resource recovery. Servers that retain an open socket for accepting new connections SHOULD NOT end the closing or draining state early.
 
