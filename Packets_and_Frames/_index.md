@@ -2,6 +2,7 @@
 title: "12. 数据包与帧"
 anchor: "12_Packets_and_Frames"
 weight: 1200
+rank: "h1"
 ---
 
 QUIC endpoints communicate by exchanging packets. Packets have confidentiality and integrity protection; see Section 12.1. Packets are carried in UDP datagrams; see Section 12.2.

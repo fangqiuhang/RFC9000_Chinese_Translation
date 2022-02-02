@@ -2,6 +2,7 @@
 title: "11. 错误处理"
 anchor: "11_Error_Handling"
 weight: 1100
+rank: "h1"
 ---
 
 An endpoint that detects an error SHOULD signal the existence of that error to its peer. Both transport-level and application-level errors can affect an entire connection; see Section 11.1. Only application-level errors can be isolated to a single stream; see Section 11.2.
