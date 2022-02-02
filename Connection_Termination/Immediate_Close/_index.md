@@ -2,6 +2,7 @@
 title: "10.2 立即关闭"
 anchor: "10.2_Immediate_Close"
 weight: 1020
+rank: "h2"
 ---
 
 An endpoint sends a CONNECTION_CLOSE frame (Section 19.19) to terminate the connection immediately. A CONNECTION_CLOSE frame causes all streams to immediately become closed; open streams can be assumed to be implicitly reset.

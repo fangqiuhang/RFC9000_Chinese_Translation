@@ -2,6 +2,7 @@
 title: "10.1 空闲超时"
 anchor: "10.1_Idle_Timeout"
 weight: 1010
+rank: "h2"
 ---
 
 If a max_idle_timeout is specified by either endpoint in its transport parameters (Section 18.2), the connection is silently closed and its state is discarded when it remains idle for longer than the minimum of the max_idle_timeout value advertised by both endpoints.

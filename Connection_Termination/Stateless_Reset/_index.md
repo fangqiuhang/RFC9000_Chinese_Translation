@@ -2,6 +2,7 @@
 title: "10.3 无状态重置"
 anchor: "10.3_Stateless_Reset"
 weight: 1030
+rank: "h2"
 ---
 
 A stateless reset is provided as an option of last resort for an endpoint that does not have access to the state of a connection. A crash or outage might result in peers continuing to send data to an endpoint that is unable to properly continue the connection. An endpoint MAY send a Stateless Reset in response to receiving a packet that it cannot associate with an active connection.
