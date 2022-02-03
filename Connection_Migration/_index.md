@@ -7,7 +7,7 @@ rank: "h1"
 
 The use of a connection ID allows connections to survive changes to endpoint addresses (IP address and port), such as those caused by an endpoint migrating to a new network. This section describes the process by which an endpoint migrates to a new address.
 
-连接ID的使用允许连接经受住终端地址（IP地址和端口）的变化，例如由终端迁移至新的网络环境而引起的变化。本章描述了终端迁移至新地址的过程。
+连接ID的使用使得连接能经受住终端地址（IP地址和端口）的变化，例如由终端迁移至新的网络环境而引起的变化。本章描述了终端迁移至新地址的过程。
 
 The design of QUIC relies on endpoints retaining a stable address for the duration of the handshake. An endpoint MUST NOT initiate connection migration before the handshake is confirmed, as defined in Section 4.1.2 of [QUIC-TLS].
 
