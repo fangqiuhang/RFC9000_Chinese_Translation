@@ -7,7 +7,7 @@ rank: "h2"
 
 A stateless reset is provided as an option of last resort for an endpoint that does not have access to the state of a connection. A crash or outage might result in peers continuing to send data to an endpoint that is unable to properly continue the connection. An endpoint MAY send a Stateless Reset in response to receiving a packet that it cannot associate with an active connection.
 
-如果终端无法访问连接的状态数据，那么无状态重置将是其最后手段。崩溃或中断可能造成对端持续向一个无法正确地维持连接的终端发送数据。终端{{< req_level MAY >}}在接收到一个它无法关联到某个活跃连接的数据包时发送无状态重置作为回应。
+如果终端无法访问连接的状态数据，那么无状态重置将是其最后手段。崩溃或中断可能造成对端持续向一个没有正常地维持连接的终端发送数据。终端{{< req_level MAY >}}在接收到一个它无法关联到某个活跃连接的数据包时发送无状态重置作为响应。
 
 A stateless reset is not appropriate for indicating errors in active connections. An endpoint that wishes to communicate a fatal connection error MUST use a CONNECTION_CLOSE frame if it is able.
 
@@ -19,7 +19,7 @@ To support this process, an endpoint issues a stateless reset token, which is a 
 
 A stateless reset token is specific to a connection ID. An endpoint issues a stateless reset token by including the value in the Stateless Reset Token field of a NEW_CONNECTION_ID frame. Servers can also issue a stateless_reset_token transport parameter during the handshake that applies to the connection ID that it selected during the handshake. These exchanges are protected by encryption, so only client and server know their value. Note that clients cannot use the stateless_reset_token transport parameter because their transport parameters do not have confidentiality protection.
 
-每个无状态重置令牌都是特定于某个连接ID的。终端签发无状态重置令牌时，将它的值包含在**新连接ID帧**的无状态重置令牌字段中。服务器还可以在握手期间签发传输参数`stateless_reset_token`（无状态重置令牌），它会被应用到服务器在握手期间选择的连接ID上。这些信息交换是被加密保护的，所以只有客户端和服务器知道它们的值。注意，客户端不能使用传输参数`stateless_reset_token`，因为它们的传输参数没有可信度保护。
+每个无状态重置令牌都是特定于某个连接ID的。终端签发无状态重置令牌时，将它的值包含在**新连接ID帧**的无状态重置令牌字段中。服务器还可以在握手期间签发传输参数`stateless_reset_token`（无状态重置令牌），它会被应用到服务器在握手期间选择的连接ID上。这些信息交换是受到加密保护的，所以只有客户端和服务器知道它们的值。注意，客户端不能使用传输参数`stateless_reset_token`，因为它们的传输参数没有可信度保护。
 
 Tokens are invalidated when their associated connection ID is retired via a RETIRE_CONNECTION_ID frame (Section 19.16).
 
@@ -60,7 +60,7 @@ A Stateless Reset uses an entire UDP datagram, starting with the first two bits 
 
 To entities other than its intended recipient, a Stateless Reset will appear to be a packet with a short header. For the Stateless Reset to appear as a valid QUIC packet, the Unpredictable Bits field needs to include at least 38 bits of data (or 5 bytes, less the two fixed bits).
 
-对于不是意图的接收方的实体来说，无状态重置看起来就是一个短包头数据包。为了让无状态重置表现得像一个合法QUIC数据包，不可预测的比特位应该包含至少38比特的数据（或5字节，并去掉两个固定比特位）。
+对于不是意图的接收方的实体来说，无状态重置看起来就是一个短包头数据包。为了让无状态重置表现得像一个合法QUIC数据包，不可预测的比特位应该使用至少38比特的数据（或者说5字节并去掉两个固定比特位）。
 
 The resulting minimum size of 21 bytes does not guarantee that a Stateless Reset is difficult to distinguish from other packets if the recipient requires the use of a connection ID. To achieve that end, the endpoint SHOULD ensure that all packets it sends are at least 22 bytes longer than the minimum connection ID length that it requests the peer to include in its packets, adding PADDING frames as necessary. This ensures that any Stateless Reset sent by the peer is indistinguishable from a valid packet sent to the endpoint. An endpoint that sends a Stateless Reset in response to a packet that is 43 bytes or shorter SHOULD send a Stateless Reset that is one byte shorter than the packet it responds to.
 
@@ -76,7 +76,7 @@ An endpoint MUST NOT send a Stateless Reset that is three times or more larger t
 
 Endpoints MUST discard packets that are too small to be valid QUIC packets. To give an example, with the set of AEAD functions defined in [QUIC-TLS], short header packets that are smaller than 21 bytes are never valid.
 
-终端{{< req_level MUST >}}丢弃因过小而不合法的QUIC数据包。举个例子，由于《[QUIC-TLS]()》中定义的AEAD函数组，小于21字节的短包头数据包永远不可能合法。
+终端{{< req_level MUST >}}丢弃因过小而不合法的QUIC数据包。举个例子，在使用《[QUIC-TLS]()》中定义的AEAD函数组时，小于21字节的短包头数据包永远不可能合法。
 
 Endpoints MUST send Stateless Resets formatted as a packet with a short header. However, endpoints MUST treat any packet ending in a valid stateless reset token as a Stateless Reset, as other QUIC versions might allow the use of a long header.
 
@@ -84,7 +84,7 @@ Endpoints MUST send Stateless Resets formatted as a packet with a short header. 
 
 An endpoint MAY send a Stateless Reset in response to a packet with a long header. Sending a Stateless Reset is not effective prior to the stateless reset token being available to a peer. In this QUIC version, packets with a long header are only used during connection establishment. Because the stateless reset token is not available until connection establishment is complete or near completion, ignoring an unknown packet with a long header might be as effective as sending a Stateless Reset.
 
-终端{{< req_level MAY >}}在响应长包头数据包时发送无状态重置。在无状态重置令牌在对端处可用前发送无状态重置是没有效果的。在本QUIC版本中，只能在连接建立期间使用长包头数据包。出于无状态重置令牌只有在连接建立完成或临近完成时才可用，忽略长包头数据包的效果和发送无状态重置的效果可能是一样的。
+终端{{< req_level MAY >}}在响应长包头数据包时发送无状态重置。在无状态重置令牌在对端处可用前发送无状态重置是没有效果的。在本QUIC版本中，只能在连接建立期间使用长包头数据包。由于无状态重置令牌只有在连接建立完成或临近完成时才可用，忽略长包头数据包的效果和发送无状态重置的效果可能是一样的。
 
 An endpoint cannot determine the Source Connection ID from a packet with a short header; therefore, it cannot set the Destination Connection ID in the Stateless Reset. The Destination Connection ID will therefore differ from the value used in previous packets. A random Destination Connection ID makes the connection ID appear to be the result of moving to a new connection ID that was provided using a NEW_CONNECTION_ID frame; see Section 19.15.
 
@@ -100,7 +100,7 @@ Using a randomized connection ID results in two problems:
 
 * The randomly generated connection ID can be used by entities other than the peer to identify this as a potential Stateless Reset. An endpoint that occasionally uses different connection IDs might introduce some uncertainty about this.
 
-* 随机生成的连接ID可以被不是对端的其他实体辨识为可能的无状态重置。偶尔使用不同的连接ID的终端可以对此引入一些不确定性。
+* 随机生成的连接ID可以被不是对端的其他实体识别为可能的无状态重置。偶尔使用不同的连接ID的终端可以对此引入一些不确定性。
 
 This stateless reset design is specific to QUIC version 1. An endpoint that supports multiple versions of QUIC needs to generate a Stateless Reset that will be accepted by peers that support any version that the endpoint might support (or might have supported prior to losing state). Designers of new versions of QUIC need to be aware of this and either (1) reuse this design or (2) use a portion of the packet other than the last 16 bytes for carrying data.
 
