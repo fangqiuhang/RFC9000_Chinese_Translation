@@ -7,7 +7,7 @@ rank: "h1"
 
 QUIC endpoints communicate by exchanging packets. Packets have confidentiality and integrity protection; see Section 12.1. Packets are carried in UDP datagrams; see Section 12.2.
 
-QUIC终端用交换数据包的方式交流。数据包具有可信度和完整性保护，详见[第12.1章]()。数据包是由UDP数据报携带的，详见[第12.2章]()。
+QUIC终端间用交换数据包的方式交流。数据包具有可信度和完整性保护，详见[第12.1章]()。数据包是由UDP数据报携带的，详见[第12.2章]()。
 
 This version of QUIC uses the long packet header during connection establishment; see Section 17.2. Packets with the long header are Initial (Section 17.2.2), 0-RTT (Section 17.2.3), Handshake (Section 17.2.4), and Retry (Section 17.2.5). Version negotiation uses a version-independent packet with a long header; see Section 17.2.1.
 
