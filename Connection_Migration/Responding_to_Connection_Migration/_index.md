@@ -11,7 +11,7 @@ Receiving a packet from a new peer address containing a non-probing frame indica
 
 If the recipient permits the migration, it MUST send subsequent packets to the new peer address and MUST initiate path validation (Section 8.2) to verify the peer's ownership of the address if validation is not already underway. If the recipient has no unused connection IDs from the peer, it will not be able to send anything on the new path until the peer provides one; see Section 9.5.
 
-如果接收方承认这次迁移，那它{{< req_level MUST >}}改向新的对端地址发送后续数据包，并且，如果还没有发起，则{{< req_level MUST >}}发起路径验证（详见[第8.2章]()）来验证对端对那个地址的所有权。如果接收方没有来自对端的尚未使用的连接ID，那么在对端提供一个之前它将无法在新路径上发送任何东西；详见[第9.5章]()。
+如果接收方承认这次迁移，那它{{< req_level MUST >}}改向新的对端地址发送后续数据包，并且，如果还没有发起，则{{< req_level MUST >}}发起路径验证（详见[第8.2章]()）来验证对端对那个地址的所有权。如果接收方没有来自对端的尚未使用的连接ID，那么在对端提供一个之前它将无法在新路径上发送任何数据，详见[第9.5章]()。
 
 An endpoint only changes the address to which it sends packets in response to the highest-numbered non-probing packet. This ensures that an endpoint does not send packets to an old peer address in the case that it receives reordered packets.
 
@@ -23,7 +23,7 @@ An endpoint MAY send data to an unvalidated peer address, but it MUST protect ag
 
 After changing the address to which it sends non-probing packets, an endpoint can abandon any path validation for other addresses.
 
-终端在改变它将非探测数据包发向的地址后，它可以不再为其他地址进行路径验证。
+终端在改变它将非探测数据包发向的地址后，它可以放弃为其他地址进行的路径验证。
 
 Receiving a packet from a new peer address could be the result of a NAT rebinding at the peer.
 

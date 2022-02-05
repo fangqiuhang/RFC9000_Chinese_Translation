@@ -11,4 +11,4 @@ QUIC允许服务器在一个IP地址上接受连接，然后在握手之后立�
 
 Migrating a connection to a new server address mid-connection is not supported by the version of QUIC specified in this document. If a client receives packets from a new server address when the client has not initiated a migration to that address, the client SHOULD discard these packets.
 
-在这份文档制定的QUIC规范版本中，在连接途中迁移到新服务器地址是不受支持的。如果客户端在还没有发起一次前往新服务器地址的迁移的情况下就从一个那个地址接收到了数据包，那么客户端{{< req_level SHOULD >}}丢弃这些数据包。
+在这份文档制定的QUIC规范版本中，在连接途中迁移到新服务器地址是不受支持的。如果客户端在还没有发起一次前往新服务器地址的迁移的情况下就从那个地址接收到了数据包，那么客户端{{< req_level SHOULD >}}丢弃这些数据包。
