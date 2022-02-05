@@ -15,11 +15,11 @@ Path validation tests that packets sent on a path to a peer are received by that
 
 Path validation does not validate that a peer can send in the return direction. Acknowledgments cannot be used for return path validation because they contain insufficient entropy and might be spoofed. Endpoints independently determine reachability on each direction of a path, and therefore return reachability can only be established by the peer.
 
-地址验证并不验证对端能够在返回的方向上发送数据。确认不能被用于返回路径的验证，因为它们携带的熵不够并且可能是伪造的。终端独立判断一条路径在各自方向上的可达性，因此返回方向的可达性只能由对端建立。
+地址验证并不验证对端能够在返回的方向上发送数据。确认不能被用于返回路径的验证，因为它们携带的熵不够并且可能是伪造的。不同终端独立判断一条路径在各自方向上的可达性，因此返回方向的可达性只能由对端建立。
 
 Path validation can be used at any time by either endpoint. For instance, an endpoint might check that a peer is still in possession of its address after a period of quiescence.
 
-任一终端可以都在任意时间使用路径验证。例如，某个终端可能想在对端沉默了一段时间后检查对端是否还位于原来的地址上。
+任一终端都可以在任意时间使用路径验证。例如，某个终端可能想在对端沉默了一段时间后检查对端是否还位于原来的地址上。
 
 Path validation is not designed as a NAT traversal mechanism. Though the mechanism described here might be effective for the creation of NAT bindings that support NAT traversal, the expectation is that one endpoint is able to receive packets without first having sent a packet on that path. Effective NAT traversal needs additional synchronization mechanisms that are not provided here.
 

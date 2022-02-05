@@ -15,15 +15,15 @@ Additionally, an endpoint MAY consider the peer address validated if the peer us
 
 For the client, the value of the Destination Connection ID field in its first Initial packet allows it to validate the server address as a part of successfully processing any packet. Initial packets from the server are protected with keys that are derived from this value (see Section 5.2 of [QUIC-TLS]). Alternatively, the value is echoed by the server in Version Negotiation packets (Section 6) or included in the Integrity Tag in Retry packets (Section 5.8 of [QUIC-TLS]).
 
-对客户端来说，它首个初始数据包中目标连接ID字段的值允许它有机会验证服务器的地址，只要服务器能成功处理任何数据包。来自服务器的初始数据包会受到从那个目标连接ID字段的值衍生的密钥的保护（详见《[QUIC-TLS]()》的[第5.2章]()）。另一方面，这个值会被服务器在版本协商包（详见[第6章]()）中被回显，或在重试数据包的完整性标签中被使用（详见《[QUIC-TLS]()》的[第5.8章]()）。
+对客户端来说，它的首个初始数据包中目标连接ID字段的值允许它有机会验证服务器的地址，只要服务器能成功处理任一数据包。来自服务器的初始数据包会受到从那个目标连接ID字段的值衍生的密钥的保护（详见《[QUIC-TLS]()》的[第5.2章]()）。另一方面，这个值会被服务器在版本协商包（详见[第6章]()）中被回显，或在重试数据包的完整性标签中被使用（详见《[QUIC-TLS]()》的[第5.8章]()）。
 
 Prior to validating the client address, servers MUST NOT send more than three times as many bytes as the number of bytes they have received. This limits the magnitude of any amplification attack that can be mounted using spoofed source addresses. For the purposes of avoiding amplification prior to address validation, servers MUST count all of the payload bytes received in datagrams that are uniquely attributed to a single connection. This includes datagrams that contain packets that are successfully processed and datagrams that contain packets that are all discarded.
 
-在验证客户端地址前，服务器发送的字节数{{< req_level MUST_NOT >}}超过已接收字节数三倍。这就限制了所有能用伪造源地址的方式实施的放大攻击的量级。出于在地址验证前避免放大攻击的目的，如果某个数据报是归属于唯一的某条连接的，那么服务器{{< req_level MUST >}}统计在所有这种数据报中接收的载荷的字节数。这既包括了含有被成功处理的数据包的数据报，也包括了含有被全部丢弃的数据包的数据报。
+在验证客户端地址前，服务器发送的字节数{{< req_level MUST_NOT >}}超过已接收字节数三倍。这就限制了所有能用伪造源地址的方式实施的放大攻击的量级。出于在地址验证前避免放大攻击的目的，服务器{{< req_level MUST >}}统计在数据报中接收的载荷的字节数，每个数据报都是归属于唯一的某条连接的。这里的数据报既包括了含有被成功处理的数据包的数据报，也包括了含有被全部丢弃的数据包的数据报。
 
 Clients MUST ensure that UDP datagrams containing Initial packets have UDP payloads of at least 1200 bytes, adding PADDING frames as necessary. A client that sends padded datagrams allows the server to send more data prior to completing address validation.
 
-客户端{{< req_level MUST >}}确保包含初始数据包的UDP数据报含有至少1200字节的UDP载荷，在需要的时候添加**填充帧**。发送填充过的数据报的客户端允许服务器在完成地址验证前发送更多数据。
+客户端{{< req_level MUST >}}确保包含初始数据包的UDP数据报含有至少1200字节的UDP载荷，不够就加**填充帧**。发送填充过的数据报的客户端允许服务器在完成地址验证前发送更多数据。
 
 Loss of an Initial or Handshake packet from the server can cause a deadlock if the client does not send additional Initial or Handshake packets. A deadlock could occur when the server reaches its anti-amplification limit and the client has received acknowledgments for all the data it has sent. In this case, when the client has no reason to send additional packets, the server will be unable to send more data because it has not validated the client's address. To prevent this deadlock, clients MUST send a packet on a Probe Timeout (PTO); see Section 6.2 of [QUIC-RECOVERY]. Specifically, the client MUST send an Initial packet in a UDP datagram that contains at least 1200 bytes if it does not have Handshake keys, and otherwise send a Handshake packet.
 
