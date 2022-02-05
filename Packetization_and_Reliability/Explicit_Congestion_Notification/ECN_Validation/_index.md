@@ -19,11 +19,11 @@ To perform ECN validation for a new path:
 
 * The endpoint monitors whether all packets sent with an ECT codepoint are eventually deemed lost (Section 6 of [QUIC-RECOVERY]), indicating that ECN validation has failed.
 
-* 终端观察是否所有具有ECT码点的数据包最终都被视为丢包（详见《[QUIC恢复]()》的[第6章]()），这表明ECN验证失败了。
+* 终端观察是否所有具有`ECT`码点的数据包最终都被视为丢包（详见《[QUIC恢复]()》的[第6章]()），若是则表明ECN验证失败了。
 
 If an endpoint has cause to expect that IP packets with an ECT codepoint might be dropped by a faulty network element, the endpoint could set an ECT codepoint for only the first ten outgoing packets on a path, or for a period of three PTOs (see Section 6.2 of [QUIC-RECOVERY]). If all packets marked with non-zero ECN codepoints are subsequently lost, it can disable marking on the assumption that the marking caused the loss.
 
-如果终端怀疑一个故障的网络设备正在丢弃具有ECT码点的IP数据包，那么它可以为路径上仅前十个出站数据包设置ECT码点，或以每三个PTO（详见《[QUIC恢复]()》的[第6.2章]()）一次的间隔设置。如果所有标记为非零ECN码点的数据包都接连遭遇丢包，那么它就可以基于标记会引发丢包的假设来禁用标记。
+如果终端怀疑一个故障的网络设备正在丢弃具有`ECT`码点的IP数据包，那么它可以为路径上仅前十个出站数据包设置`ECT`码点，或以每三个PTO（详见《[QUIC恢复]()》的[第6.2章]()）一次的间隔设置。如果所有标记为非零ECN码点的数据包都接连遭遇丢包，那么它就可以基于标记行为会引发丢包的假设来禁用标记。
 
 An endpoint thus attempts to use ECN and validates this for each new connection, when switching to a server's preferred address, and on active connection migration to a new path. Appendix A.4 describes one possible algorithm.
 
