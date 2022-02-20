@@ -1,7 +1,9 @@
 html,
 body {
-    color: snow;
+    color: white;
     background-color: rgb(48, 48, 48);
+    letter-spacing: 0.1px;
+    font-size: 18px;
 }
 
 .sidebar.sidebar-rfc9000 {
@@ -31,7 +33,8 @@ section.page h1,
 section.page h2,
 section.page h3,
 section.page h4 {
-    border-color: rgb(2, 2, 2);
+    text-shadow: 2px 4px 5px #000000;
+    border-color: snow;
 }
 
 section.page a,
@@ -49,7 +52,13 @@ section.page h1 a:visited,
 section.page h2 a:visited,
 section.page h3 a:visited,
 section.page h4 a:visited {
-    color: rgb(228, 228, 228);
+    color: snow;
+}
+
+section.page table,
+section.page th,
+section.page td {
+    border: solid snow;
 }
 
 .block {
@@ -67,7 +76,13 @@ section.page h4 a:visited {
     box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 .content em strong {
+    text-shadow: 2px 4px rgb(2, 2, 2);
     color: ghostwhite;
+}
+
+.content strong {
+    text-shadow: 0 0 7px rgb(2, 2, 2);
+    color: snow;
 }
 
 .block:before {
@@ -75,21 +90,21 @@ section.page h4 a:visited {
 }
 
 .block.tip {
-    background: #e8f7e6;
-    border-top-color: #84c578;
+    background: #454849;
+    border-top-color: #284750;
 }
 
 .block.note {
-    background: slategray;
-    border-top-color: steelblue;
+    background: #454b5e;
+    border-top-color: #070d1d;
 }
 
 .block.info {
-    background: #fefaf5;
-    border-top-color: #f1b37e;
+    background: #2b2520;
+    border-top-color: #271200;
 }
 
 .block.warn {
-    background: #fbeded;
-    border-top-color: #d58181;
+    background: #533f3f;
+    border-top-color: #270000;
 }
