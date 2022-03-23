@@ -7,7 +7,7 @@ rank: "h2"
 
 A request forgery attack occurs where an endpoint causes its peer to issue a request towards a victim, with the request controlled by the endpoint. Request forgery attacks aim to provide an attacker with access to capabilities of its peer that might otherwise be unavailable to the attacker. For a networking protocol, a request forgery attack is often used to exploit any implicit authorization conferred on the peer by the victim due to the peer's location in the network.
 
-在请求伪造攻击中，终端使得对端向受害者发起一次由终端控制的请求。请求伪造攻击旨在使得攻击者能够操作对端所具有的功能，而一般情况下攻击者无法访问到这些功能。对于网络协议来说，请求伪造攻击经常被用于破解在受害者与对端间非公开的鉴权认证，利用的是对端在网络中所处的特殊位置。
+在请求伪造攻击中，终端使得对端向受害者发起一次由终端控制的请求。请求伪造攻击旨在使得攻击者能够操作对端所具有的功能，而一般情况下攻击者无法访问到这些功能。对于一份网络协议来说，正因为对端在网络中所处的特殊位置，请求伪造攻击经常被用于利用在受害者与对端间非公开的鉴权认证。
 
 For request forgery to be effective, an attacker needs to be able to influence what packets the peer sends and where these packets are sent. If an attacker can target a vulnerable service with a controlled payload, that service might perform actions that are attributed to the attacker's peer but are decided by the attacker.
 
@@ -19,7 +19,7 @@ For example, cross-site request forgery [CSRF] exploits on the Web cause a clien
 
 As QUIC runs over UDP, the primary attack modality of concern is one where an attacker can select the address to which its peer sends UDP datagrams and can control some of the unprotected content of those packets. As much of the data sent by QUIC endpoints is protected, this includes control over ciphertext. An attack is successful if an attacker can cause a peer to send a UDP datagram to a host that will perform some action based on content in the datagram.
 
-由于QUIC运行在UDP之上，主要关心的攻击形式是攻击者能够操纵其对端将UDP数据报发向的地址并且能够控制数据包载荷中的部分原始内容。由于QUIC终端发送的许多数据都是受保护的，这种攻击包含这对密文的控制。如果攻击者能够使得对端向某个会基于数据报内容进行相应操作的主机发送UDP数据报，那么攻击就会成功。
+由于QUIC运行在UDP之上，主要关心的攻击形式是攻击者能够操纵其对端将UDP数据报发向的地址并且能够控制数据包载荷中的部分原始内容。由于QUIC终端发送的许多数据都是受保护的，所以这种攻击包含着对密文的控制。如果攻击者能够使得对端向某个会基于数据报内容进行相应操作的主机发送UDP数据报，那么攻击就会成功。
 
 This section discusses ways in which QUIC might be used for request forgery attacks.
 
