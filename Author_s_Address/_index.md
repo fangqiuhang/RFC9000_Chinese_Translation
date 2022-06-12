@@ -18,7 +18,7 @@ Email: mt@lowentropy.net
 
 ## 译
 
-- [YunzheZJU](https://github.com/YunzheZJU)
+- [Yunzhe](https://github.com/YunzheZJU)
   - Email: yunzhe@zju.edu.cn
 
 - [方秋航](https://github.com/fangqiuhang)
