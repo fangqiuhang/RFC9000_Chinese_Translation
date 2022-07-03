@@ -38,7 +38,7 @@ title="图13：长包头数据包格式" %}}
 
 长数据包类型（Long Packet Type）：
 
-:   字节0中的后两个比特位（掩码为`0x30`的那两个）包含了数据包类型。[表格5](#Table_5_Long_Header_Packet_Types)罗列了数据包类型。
+:   字节0中的后两个比特位（掩码为`0x30`的那两个）包含了数据包类型。[表5](#Table_5_Long_Header_Packet_Types)罗列了数据包类型。
 
 类型特定比特位（Type-Specific Bits）：
 
@@ -72,7 +72,7 @@ title="图13：长包头数据包格式" %}}
 
 {{% block_ref
 indx="Table_5_Long_Header_Packet_Types"
-title="表格5：长包头数据包类型" %}}
+title="表5：长包头数据包类型" %}}
 
 | 类型   | 名称    | 章节           |
 |:-----|:------|:-------------|
