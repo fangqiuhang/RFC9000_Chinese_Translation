@@ -28,7 +28,7 @@ The integration of TLS and QUIC is described in more detail in [[QUIC-TLS](#QUIC
 [QUIC-TLS]是句子里实际提到的参考文献，这个结构本身参与语法构建，按照中文的习惯一般使用书名号《》将这种引用括起来。因此其应该翻译为：
 
 ```
-《[QUIC TLS](#QUIC-TLS)》
+《[QUIC-TLS](#QUIC-TLS)》
 ```
 
 但是下述这种：
